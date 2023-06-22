@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh Giá</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/PizzasLogo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Start Trang Chủ -->
+    <header style="background-color: black;">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="assets/PizzasLogo.png" alt="">
+        </a>
+        <!-- Menu-Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="/index.html">Trang Chủ</a></li>
+            <li><a href="/Cart/Thucdon.html">Thực đơn</a></li>
+            <li><a href="/KhuyenMai.html">Khuyến Mãi</a></li>
+            <li><a href="/Feedback.html">Phản Hồi</a></li>
+            <li><a href="/ChiNhanh.html">Chi Nhánh</a></li>
+        </ul>
+        <!-- icon card and  -->
+        <div class="header-icon">
+            <!-- <i class='bx bx-cart-alt'></i> -->
+            <i class='bx bx-search' id="search-icon"></i>
+        </div>
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+    </header>
+    <!-- Products -->
+    <!-- FeedBack Food -->
+    <div class="FeedBack-all">
+        <div class="FeedBack">
+            <div class="left">
+                <div class="image">
+                    <img src="assets/margherita.jpg" alt="Hình ảnh sản phẩm">
+                </div>
+            </div>
+            <div class="right">
+                <h1 class="Product-Reviews">Đánh giá về chúng tôi</h1>
+                <form id="contact-form" method="POST">
+                    <label htmlFor="name">Họ và tên</label>
+                    <input name="name" placeholder="Nhập tên đầy đủ ..." type="text" />
+                    <label htmlFor="email">Email</label>
+                    <input name="email" placeholder="Nhập email..." type="email" />
+                    <label htmlFor="message">Cảm nhận về món ăn</label>
+                    <textarea rows="6" placeholder="Nhập cảm nhận của bạn..." name="message" required></textarea>
+                    <button type="submit"> Gửi đánh giá</button>
+                </form>
+            </div>
+        </div>
+        <!-- Đánh Giá -->
+        <section class="customers" id="customers">
+            <div class="heading">
+                <h2>Đánh giá của khách hàng</h2>
+            </div>
+            <div class="customers-container">
+                <div class="box">
+                    <h2>Lò Văn Khánh</h2>
+                    <img src="/assets/Khánh.jpg" alt="">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>Pizza tại cửa hàng này thực sự ngon và hấp dẫn. Đây là địa điểm tuyệt vời để thưởng thức những
+                        chiếc
+                        pizza chất lượng cao.</p>
+                </div>
+                <div class="box">
+                    <h2>Nguyễn Đức Duy</h2>
+                    <img src="/assets/DuyVip.jpg" alt="">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>Tôi đã thử nhiều cửa hàng pizza khác nhau, nhưng pizza tại cửa hàng này thực sự nổi bật.Chất
+                        lượng
+                        nguyên liệu tươi ngon , nên ăn</p>
+                </div>
+                <div class="box">
+                    <h2>Trương Hữu Tín</h2>
+                    <img src="/assets/Tín.jpg" alt="">
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>Cửa hàng pizza này không chỉ đáng tin cậy về chất lượng, mà còn cung cấp dịch vụ khách hàng xuất
+                        sắc. Nhân viên thân
+                        thiện, nhanh nhẹn</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Pizza Shop</h2>
+            <p>Mọi đánh giá về bản quyền hình ảnh, thương hiệu , xin liên hệ</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Hỗ Trợ</h3>
+            <li><a href="#">Sản Phẩm</a></li>
+            <li><a href="#">Trợ giúp & Hỗ trợ</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Điều khoản</a></li>
+            <li><a href="#">Tư vấn ngay</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Hương dẫn</h3>
+            <li><a href="#">Đặc trưng</a></li>
+            <li><a href="#">Nghề nghiệp</a></li>
+            <li><a href="#">Bài đăng trên Blog</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+            <li><a href="#">Chi nhánh của chúng tôi</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Liên hệ</h3>
+            <div class="contact">
+                <span><i class='bx bxs-map'></i>67 Tả Thanh Oai</span>
+                <span><i class='bx bxs-phone'></i>0345.803.885</span>
+                <span><i class='bx bxs-envelope'></i> DuyThanh88Computer@gmail.com</span>
+            </div>
+        </div>
+    </section>
+    <!-- CopyRight -->
+    <div class="copyright">
+        <p style="text-align: center;">&#169; 1621CNT-02 Duy Tín Khánh</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

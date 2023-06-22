@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Login/Login.css">
+    <link rel="stylesheet" href="/Register/Register.css">
+    <link rel="icon" type="image/x-icon" href="/assets/PizzasLogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Start Trang Chủ -->
+    <header>
+        <!-- Logo -->
+        <a href="#" class="logo">
+            <img src="assets/PizzasLogo.png" alt="">
+        </a>
+        <!-- Menu-Icon -->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="/index.html">Trang Chủ</a></li>
+            <li><a href="/Cart/Thucdon.html">Thực đơn</a></li>
+            <li><a href="/KhuyenMai.html">Khuyến Mãi</a></li>
+            <li><a href="/Feedback.html">Phản Hồi</a></li>
+            <li><a href="#" id="loginLink">Đăng Nhập</a></li>
+        </ul>
+        <!-- icon card and  -->
+        <div class="header-icon">
+            <!-- <i class='bx bx-cart-alt'></i> -->
+            <i class='bx bx-search' id="search-icon"></i>
+        </div>
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+    </header>
+
+    <!-- Login  -->
+    <div style="display: none;" id="loginFolder" class="folder">
+        <div class="container">
+            <h2 style="text-align: center;color: red;margin-bottom: 20px;margin-top: 20px;">Đăng nhập</h2>
+            <span id="closeButton" class="close-button"><i class="fas fa-times"></i></span>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username"> <b>Tài khoản</b></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Mật khẩu</b></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div style="display: flex;" class="form-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label style="margin-left: 10px;" for="remember"><b>Ghi nhớ đăng nhập</b></label>
+                </div>
+                <div class="login">
+                    <button type="submit" id="registerButton">Đăng ký</button>
+                    <button type="submit">Đăng nhập</button>
+                </div>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+    <!-- End Login -->
+    <!-- Register -->
+    <div style="display: none;" id="registerFolder" class="folder">
+        <div class="Register-title">
+            <h2 style="text-align: center;">Đăng kí</h2>
+        </div>
+        <span id="closeButtonRegister" class="close-button"><i class="fas fa-times"></i></span>
+        <form>
+            <div class="Register-group">
+                <label for="username">Tài khoản</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="Register-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="Register-group">
+                <label for="confirm-password">Xác nhận mật khẩu</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="Register-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="Register-group">
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="Register-group">
+                <label for="gender">Giới tính</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Chọn giới tính</option>
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                </select>
+            </div>
+            <div style="text-align: center;padding-left: 20px; padding-right: 20px;" class="Register-group">
+                <button type="submit">Đăng kí</button>
+            </div>
+        </form>
+    </div>
+    <!-- End Register -->
+
+    <!-- Trang Chủ -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>James Maridista <br> Pizza HPC </h1>
+            <p>Chúng tôi cam kết đem đến cho bạn những trải nghiệm ẩm thực tuyệt vời mỗi lần ghé thăm</p>
+            <a href="/Cart/Thucdon.html" class="btn">Mua ngay</a>
+        </div>
+        <div class="home-img">
+            <!-- <img src="/assets/pizzas.jpg" alt=""> -->
+        </div>
+    </section>
+    <!-- End Trang Chủ -->
+
+    <!-- Start About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/assets/multiplePizzas.jpeg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Giới thiệu về Pizza của chúng tôi</h2>
+            <p>Chào mừng đến với cửa hàng Pizza của chúng tôi! Chúng tôi tự hào mang đến cho bạn những chiếc pizza tuyệt
+                vời và ngon
+                miệng.</p>
+            <p>Với sự kết hợp hoàn hảo giữa bột mỏng và nhân thơm ngon, mỗi chiếc pizza của chúng tôi được làm thủ công
+                và nướng trong
+                lò chuyên nghiệp để đảm bảo hương vị tuyệt nhất.</p>
+            <p>Hãy đến và trải nghiệm sự hài lòng từ những miếng pizza thơm ngon và chất lượng cao. Chúng tôi cam kết
+                đem đến cho bạn
+                những trải nghiệm ẩm thực tuyệt vời mỗi lần ghé thăm.</p>
+            <a href="/Cart/Thucdon.html" class="btn">Mua Ngay</a>
+        </div>
+    </section>
+    <!-- Products -->
+    <!-- Start-các bước làm bánh -->
+    <div style="padding:0px;margin: 0px;" class="why">
+        <div style="padding-top: 0px;" class="grid wide">
+            <div class="why__header">
+                <h1 style="padding-top: 0px;margin: 0px;" class="why__header-text">TẠI SAO NÊN CHỌN PIZZA CỦA CHÚNG TÔI
+            </div>
+            </h1>
+            <ul class="row why__list">
+                <li class="col l-3 m-6 c-12 why__item">
+                    <div class="why__item-img">
+                        <img src="/assets/footer_01.png" alt="">
+                    </div>
+                    <div class="why__item-head"> <b>CHẤT LƯỢNG HÀNG ĐẦU</b> </div>
+                    <div class="why__item-text">Chú trọng khâu tuyển chọn đội ngũ đầu bếp chuyên nghiệp, thực đơn
+                        của
+                        Pizza Express luôn được đổi mới, đa dạng với pizza
+                        nhiều hương vị, sandwich, mỳ ý và các món ăn nhanh khác.</div>
+                </li>
+                <li class="col l-3 m-6 c-12 why__item align-right-on-mobile">
+                    <div class="why__item-img margin-right-on-mobile">
+                        <img src="/assets/footer_02.png" alt="">
+                    </div>
+                    <div class="why__item-head"> <b>GIAO HÀNG ĐÚNG GIỜ</b> </div>
+                    <div class="why__item-text margin-right-on-mobile">Để tăng cường sự tin tưởng và yên tâm với
+                        khách
+                        hàng, Pizza Express cam kết luôn giao hàng đúng giờ và chi phí giao hàng
+                        rẻ nhất để đảm bảo khách hàng có thể nhận bánh trong thời gian nhanh nhất.
+                    </div>
+                </li>
+                <li class="col l-3 m-6 c-12 why__item">
+                    <div class="why__item-img">
+                        <img src="/assets/footer_03.png" alt="">
+                    </div>
+                    <div class="why__item-head"><b>TRUYỀN THỐNG GIÁ TRỊ</b></div>
+                    <div class="why__item-text">Lựa chọn cho mình một hướng đi mới để tạo nên sự khác biệt, mô hình
+                        Pizza take away - pizza mang đi giúp khách hàng tiết
+                        kiệm thời gian, đem đến sự tiện lợi tối ưu trong việc lựa chọn, thanh toán, đóng gói và nhận
+                        hàng.</div>
+                </li>
+                <li class="col l-3 m-6 c-12 why__item align-right-on-mobile">
+                    <div class="why__item-img margin-right-on-mobile">
+                        <img src="/assets/footer_04.png" alt="">
+                    </div>
+                    <div class="why__item-head"><b>PHỤC VỤ CHUYÊN NGHIỆP</b></div>
+                    <div class="why__item-text margin-right-on-mobile">Pizza Express cùng với đội ngũ nhân viên mang
+                        đầy
+                        sức trẻ và nhiệt huyết, chúng tôi luôn mong muốn đem lại cho khách
+                        hàng của mình chất lượng dịch vụ tốt nhất, luôn lắng nghe và chăm sóc những nhu cầu dù là
+                        nhỏ
+                        nhất của Quý khách.</div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!-- End-Các bước -->
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Pizza Shop</h2>
+            <p>Mọi đánh giá về bản quyền hình ảnh, thương hiệu , xin liên hệ</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Hỗ Trợ</h3>
+            <li><a href="#">Sản Phẩm</a></li>
+            <li><a href="#">Trợ giúp & Hỗ trợ</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Điều khoản</a></li>
+            <li><a href="#">Tư vấn ngay</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Hương dẫn</h3>
+            <li><a href="#">Đặc trưng</a></li>
+            <li><a href="#">Nghề nghiệp</a></li>
+            <li><a href="#">Bài đăng trên Blog</a></li>
+            <li><a href="#">Điều khoản sử dụng</a></li>
+            <li><a href="#">Chi nhánh của chúng tôi</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Liên hệ</h3>
+            <div class="contact">
+                <span><i class='bx bxs-map'></i>67 Tả Thanh Oai</span>
+                <span><i class='bx bxs-phone'></i>0345.803.885</span>
+                <span><i class='bx bxs-envelope'></i> DuyThanh88Computer@gmail.com</span>
+            </div>
+        </div>
+    </section>
+    <!-- CopyRight -->
+    <div class="copyright">
+        <p style="text-align: center;">&#169; 1621CNT-02 Duy Tín Khánh</p>
+    </div>
+    <script src="main.js"></script>
+    <script src="Login/Login.js"></script>
+    <script src="/Register/Register.js"></script>
+</body>
+
+</html>
